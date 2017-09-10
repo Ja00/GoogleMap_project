@@ -9,6 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "server" : "./build_css.sh && node index.js"
   },
   "author": "",
   "license": "ISC"
