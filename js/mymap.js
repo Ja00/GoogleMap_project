@@ -23,14 +23,16 @@ function initMap() {
  map.addListener('counds_changed', function() {
     searchBox.setBounds(map.getBounds());
  });
+ 
+ var request = {
   location: new google.maps.Latlng(DEFAULT_LAT, DEFAULT_LNG),
   radius: DEFAULT_RADIUS,
   type: 'restaurant'
-};
+  };
 
 service = new google.maps.places.PlacesService(map);
 service.textSearch(request, callback);  
-
+}
 
 initMap();
 
@@ -61,6 +63,6 @@ function callback(results, status) {
         current_infowindow = infowindow;
       });
     });
-  }    
+  }
+}    
 });
-}
