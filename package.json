@@ -2,15 +2,23 @@
   "name": "myapp",
   "version": "1.0.0",
   "description": "",
-  "main": "example.js",
+  "main": "index.js",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.4",
+    "request": "^2.81.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    "server" : "./build_css.sh && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ja00/GoogleMap_project.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ja00/GoogleMap_project/issues"
+  },
+  "homepage": "https://github.com/ja00/GoogleMap_project#readme"
 }
