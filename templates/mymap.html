@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <input id="pac-input" calss="controls" type="text" placeholder="Search Box">
-    <div id="map"></div>
+    <link rel=stylesheet type="text/css" href="/css/search_bar.css">
     <link rel=stylesheet type="text/css" href="/css/mymap.css">
     <script type="text/javascript" src="/js/jquery-3.2.1.js"></script> 
     <script type="text/javascript" src="/js/underscore.js"></script>
-    <script defer type="text/javascript" src="/js/mymap.js"></script>
-   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ8PZCoEFJzI7-3PEFcz_-n3PNJO8KRcw&libraries=places"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ8PZCoEFJzI7-3PEFcz_-n3PNJO8KRcw&libraries=places"></script>
+    <script type="text/javascript" src="/js/search_bar.js"></script>
+    <script type="text/javascript" src="/js/mymap.js"></script> 
+    <div id="map"></div>
+    <div id="place-info-wrapper">
+      <div id="hero-header-wrapper"><img></img></div>
+      <div id="place-basic-info-wrapper">
+        <div id="place-basic-info">
+          <div class="place-name info-text"></div>
+          <div class="place-review-score info-text"></div>
+          <div class="place-type info-text"></div>
+        </div>
+          <button class="place-info-visibility-toggle">
+             <div class="triangle-icon">
+        </button>
+       </div>
+    </div>
   </body>
 </html>
